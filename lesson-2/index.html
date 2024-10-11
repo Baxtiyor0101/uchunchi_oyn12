@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>hi</h1>
-</body>
+  </head>
+  <body>
+    <div class="mx-auto ">
+      <input type="checkbox" id="check" class="hidden peer" />
+      <div
+        class="menu_navbar text-white  p-5 h-[100vh] fixed w-[100vw] transform -translate-x-[150%] transition-transform duration-300 peer-checked:translate-x-0"
+      >
+        <div class="flex justify-between items-center">
+          <h1>Logo</h1>
+          <label for="check">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </label>
+        </div>
+        <ul class="flex flex-col items-center gap-5">
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Pojects</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+      <nav class="bg-gray-800 flex justify-between p-5 items-center">
+        <h1 class="text-white ml-[60px]">Logo</h1>
+        <div class="md:w-[50%] justify-between">
+          <ul class="w-[100%] justify-between text-white hidden md:flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Pojects</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+
+          <label for="check md:hidden">
+            <i class="fa-solid fa-bars fa-2xl md:hidden"></i>
+          </label>
+        </div>
+      </nav>
+      <aside
+        class="bg-orange-500 fixed top-0 pb-[50px] flex flex-col gap-[35px] rounded-r-lg justify-center items-center"
+      >
+        <h2 class="m-5 text-white">logo</h2>
+        <div class="w-[100%] bg-gray-800"><hr /></div>
+        <i class="fa-home fa-solid bg-white p-3 rounded-full"></i>
+        <i class="fa-user fa-solid bg-white p-3 rounded-full"></i>
+        <i class="fa-user fa-solid bg-white p-3 rounded-full"></i>
+        <i class="fa-user fa-solid bg-white p-3 rounded-full"></i>
+        <i class="fa-user fa-solid bg-white p-3 rounded-full"></i>
+        <div class="flex gap-1">
+          <img src="./fleg.png" alt="" />
+          <img src="./fleg.png" alt="" />
+        </div>
+      </aside>
+      <main class="flex justify-center">
+        <div class="flex flex-col w-[50%]">
+          <h2 class="mb-5">Hi</h2>
+          <h1 class="text-[45px] mb-5 font-bold">
+            I’m Mohammad Reza. a Frontend developer.
+          </h1>
+          <p class="w-[80%] mb-5 text-xl">
+            Frontend developer based in tehran, Iran. I am coding with a clean
+            and beautiful problem solving in mind.
+          </p>
+          <div class="mb-[50px]">
+            <a href="" class="text-[rgba(34,34,34,0.5)] mr-5">Follow me</a>
+            <i class="fa-brands text-2xl fa-telegram"></i>
+            <i class="fa-brands text-2xl fa-telegram"></i>
+            <i class="fa-brands text-2xl fa-telegram"></i>
+            <i class="fa-brands text-2xl fa-telegram"></i>
+          </div>
+          <div>
+            <button
+              class="bg-white-200 hover:bg-rose-500 border-2 border-orange-500 p-3 rounded-md"
+            >
+              Send Request
+            </button>
+            <button
+              class="bg-white-200 hover:bg-rose-500 border-2 border-orange-500 p-3 rounded-md"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            class="absolute right-0 z-[-9]"
+            src="./BulletPoints.png"
+            alt=""
+          />
+          <img
+            class="absolute left-0 bottom-0 z-[-1]"
+            src="./BulletPoints.png"
+            alt=""
+          />
+          <img src="./mainimg.png" alt="" />
+        </div>
+      </main>
+      <section
+        class="bg-orange-500 w-[70%] mt-32 rounded-xl flex items-center mx-auto"
+      >
+        <img src="./Transparent.svg" alt="" />
+        <div>
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi
+            officia dignissimos.
+          </h1>
+        </div>
+      </section>
+      <section class="p-24">
+        <h2 class="font-bold text-4xl text-center">Why Hire Me?</h2>
+        <div class="flex justify-between">
+          <div class="item w-52 p-4 text-center flex  gap-5 flex-col ">
+            <img  class="mx-auto bg-red-400 rounded-full p-4" src="./Home.svg" alt="" />
+            <h3 class="font-bold">Communicative</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+          <div class="item w-52 p-4 text-center flex  gap-5 flex-col ">
+            <img class="mx-auto bg-red-400 rounded-full p-4" src="./Home.svg" alt="" />
+            <h3 class="font-bold">Communicative</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+          <div class="item w-52 p-4 text-center flex  gap-5 flex-col ">
+            <img class="mx-auto bg-red-400 rounded-full p-4" src="./Home.svg" alt="" />
+            <h3 class="font-bold">Communicative</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+          <div class="item w-52 p-4 text-center flex  gap-5 flex-col ">
+            <img class="mx-auto bg-red-400 rounded-full p-4" src="./Home.svg" alt="" />
+            <h3 class="font-bold">Communicative</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
