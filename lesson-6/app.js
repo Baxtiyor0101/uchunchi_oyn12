@@ -74,7 +74,6 @@ let str2 = "test";
 // console.log(str.slice(10, str.length-2)); // stringning ichidan kopy qilish
 // console.log(str.split(" ")); // shartga kora array elemntlari difatida joylashtradi
 // let test = str.split(" ");
-
 // console.log(test.join("#@")); // array elemntlarini shartga kora qoshib beradi
 // console.log(str.startsWith("dolor"));  shu bilan boshlanadimi
 // console.log(str.toLowerCase());
@@ -84,6 +83,7 @@ let str2 = "test";
 // console.log(str.trimEnd());
  
 
+//  calss work
 // tasks 1
 // Foydalanuvchiga o'zining to'liq ismini kiritishni taklif qiladigan dastur yozing.
 // Nomdagi belgilar sonini (shu jumladan bo'shliqlarni) ko'rsating.
@@ -107,3 +107,33 @@ let str2 = "test";
 //  kiritishni taklif qiling (masalan, "olma, banan, olcha").
 // Satrni alohida elementlar qatoriga aylantirish kk
 // Massivni har bir element orasidagi bo'sh joy bilan yana bir qatorga qo'shing va natijani ko'rsating.
+
+
+////////////////////////////////// homework
+
+// Foydalanuvchiga so'z kiritishni taklif qiladigan dastur yozing.
+// So'zni kichik harf bilan ko'rsating.
+// So'zni katta harf bilan ko'rsating.
+
+
+// Foydalanuvchidan jumla kiritishni so'rang.
+// Ulardan so'zni jumlaga kiritilgan yoki yo'qligini tekshirish uchun kiritishni
+//  taklif qiling  . So'z topilgan yoki topilmaganligini ko'rsatish 
+// uchun xabarni ko'rsating.
+// Jumla so'z bilan boshlanganligini tekshirish va natijani ko'rsatish kk
+
+
+// Foydalanuvchini boshida yoki oxirida qo'shimcha bo'shliqlar bilan jumla
+//  kiritishni taklif qiling.
+// Qo'shimcha bo'shliqlarni olib tashlash va tozalangan jumlani ko'rsatish kk
+//undan  dan oldin va keyin gap uzunligini ko'rsating.
+
+
+
+// Foydalanuvchidan jumla kiritishni so'rang.
+// Gapdagi birinchi bo'shliqning o'rnini topish va uni ko'rsatishkk
+// Birinchi so'zni (jumla boshidan birinchi bo'sh joyga) chiqarish va uni ko'rsatish kk
+
+// Foydalanuvchidan sevimli so'zini kiritishni so'rang.
+// So'zni bo'sh joylar bilan ajratilgan holda 5 marta ko'rsatish kk
+// Boshqa so'zni so'rang va ikkala so'zni birlashtirish va natijani ko'rsatish kk
