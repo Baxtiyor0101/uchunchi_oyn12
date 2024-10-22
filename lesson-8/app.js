@@ -23,6 +23,20 @@ filter
 */
 
 // let fruits = ["apple", "orange", "kiwi", "banana"];
+// fruits.splice(1, 1, "Cherry");
+// // console.log(fruits);
+// let test=fruits.forEach((val,inx,arr)=>{
+//   console.log(val);
+//   console.log(inx);
+//   console.log(arr);
+// })
+// console.log(test);
+
+// let newarr = fruits.map((val, inx, arr) => val + "fresh");
+// console.log(newarr);
+
+// let res = fruits.filter((val, inx, arr) => val.includes("a"));
+// console.log(res);
 
 // let newarr = fruits.forEach((val,inx) => {
 //     console.log(val, inx);
@@ -62,5 +76,86 @@ filter
 // do {
 //   console.log(ei);
 //   i++;
-  
+
 // } while (i < 10);
+
+// ishlat  for loop chiqar numbers from 1 to 50.
+
+// ishlat  while loop chiqar numbers from 50 to 1.
+
+// ishlat  do while loop chiqar numbers from 20 to 30.
+
+// 1 dan 100 gacha juft sonlar yigindisi
+
+// berilgan son boyicha osha factarialni toping
+
+// stringning teskaridini toping
+
+// Raqamni taxmin qilish o'yini:
+// Do while siklidan foydalanib raqamlarni taxmin qilish
+// oʻyinini yarating. O'yin foydalanuvchini to'g'ri raqamni
+// topmaguncha taklif qilishda davom etishi kerak.
+
+// let arr = [1, 2, 3, 4, 5];
+
+// homework
+// 1) Reverse string => "Lorem" -> "meroL" (For, prompt)
+// 2) Reverse number => 8658 -> 8568 (For, prompt) !NUMBER
+// 3) toq yoki juft => 10 -> 0 juft, 1 toq, ..., 9 toq, 10juft
+// 4) Tub sonmi => 3 -> tub, 4 -> murakkab, 9 -> murakkab
+// 5?) Mukammal sonmi => 4 -> yoq, 6 -> ha, 9 -> yoq
+// 6) prompt() => 198 => 1 + 9 + 8 => 18 => 1 + 8 => 9
+// 7) let arr = [10, 20, 50, 30, 5]; eng kattasini toping
+// 8) prompt() => non => non => true, lorem => merol => false
+// let arr = [10, 20, 50, 30, 5];
+// let num = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (num > arr[i]) {
+//     num = arr[i];
+//   }
+// }
+// console.log(num);
+
+// // function isPerfectNumber(num) {
+// let num = +prompt("son kiriting");
+// let sum = 0;
+// for (let i = 1; i < num; i++) {
+//   if (num % i === 0) {
+//     sum += i;
+//   }
+// }
+
+// alert(sum === num);
+// }
+
+// let number = 6;
+// if (isPerfectNumber(number)) {
+//   console.log(`${number} is a perfect number`);
+// } else {
+//   console.log(`${number} is not a perfect number`);
+// }
+
+// ////////////// tub son
+// function isPrime(num) {
+//   // A prime number must be greater than 1
+//   if (num <= 1) {
+//     return false;
+//   }
+
+//   // Check divisibility from 2 to the square root of num
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// // Example usage
+// let number = 29;
+// if (isPrime(number)) {
+//   console.log(`${number} is a prime number`);
+// } else {
+//   console.log(`${number} is not a prime number`);
+// }
