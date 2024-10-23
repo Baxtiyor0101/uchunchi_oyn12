@@ -56,27 +56,22 @@
 // myFunc(35);
 
 // ////////////////////// misollar yechish
-let arr = [1, 2, 3, 4, 5];
-// array ichidagi qiymatlar yigindisini topib beradigan funcfion tuzing 
+// let arr = [1, 2, 3, 4, 5];
+// array ichidagi qiymatlar yigindisini topib beradigan funcfion tuzing
 
+// aylananing radiusi berilgan bolsa uzunligini yuzini topib beruvchi function tuzing
 
-// aylananing radiusi berilgan bolsa uzunligini yuzini topib beruvchi function tuzing 
+// berilgan sonning factarialini topib beruvchi function tuzing
 
-// berilgan sonning factarialini topib beruvchi function tuzing 
+// uchta sonning eng kattasini topib beruvchi function tuzing
 
-// uchta sonning eng kattasini topib beruvchi function tuzing 
-
-// berilgan stringing ichida nechta unli harf borligini topib beruvchi function tuzing 
-
-
-
+// berilgan stringing ichida nechta unli harf borligini topib beruvchi function tuzing
 
 // Homework
-// user tugulgan kunini ismini promtda kiritadi 
+// user tugulgan kunini ismini promtda kiritadi
 // javob {ism} siz {yil} {oy} {kun} {soat} {munut} {sekunt } yashagansiz dep chiqarishi kk
 
-
-// x va y oraligidagi ixtiyoriy sonni topib beruvchi function tuzing 
+// x va y oraligidagi ixtiyoriy sonni topib beruvchi function tuzing
 
 // (capitalizeWords("javascript is fun")); // Output: JavaScript Is Fun
 // gap ichida hamma sozlarning  bosh harfi katta qilib chiqarish
@@ -84,3 +79,69 @@ let arr = [1, 2, 3, 4, 5];
 // let str="JavaScript Developer's Guide" => 4
 // string ichida  nechta katta harf qatnashganini topib beruvchi function tuzing
 
+// function getAge(ages, ismi) {
+//   let birthDate = new Date(ages);
+//   let curruntDate = new Date();
+//   let diffYear = curruntDate.getFullYear() - birthDate.getFullYear();
+//   let diffMonth = curruntDate.getMonth() - birthDate.getMonth();
+//   if (diffMonth<0) {
+//     diffYear--;
+//     diffMonth = 12 + diffMonth;
+//   }
+
+//   let diffDay = curruntDate.getDate() - birthDate.getDate();
+//   let diffHours = curruntDate.getHours() - birthDate.getHours();
+//   let diffMinutes = curruntDate.getMinutes() - birthDate.getMinutes();
+//   let diffSeconds = curruntDate.getSeconds() - birthDate.getSeconds();
+
+//   return `${ismi} siz ${diffYear} yil ${diffMonth} oy ${diffDay} kun ${diffHours} soat ${diffMinutes} minut ${diffSeconds} secund yashagnsiz`;
+// }
+// let age = prompt("tugulgan kuningni kirit");
+// let ism = prompt("ismingizni kiriting");
+// alert(getAge(age, ism));
+
+// function getRandomNumber(a, b) {
+//   return Math.floor(Math.random() * (b - a + 1)) + a;
+// }
+// let randomNumber1 = +prompt("random number 1");
+// let randomNumber2 = +prompt("random number 2");
+// alert(getRandomNumber(randomNumber1, randomNumber2));
+
+// 1 usul
+// function capitalizeWords(str) {
+//   let words = str.split(" ");
+//   let capitalizedWords = words.map(
+//     (word) => word.charAt(0).toUpperCase() + word.slice(1)
+//   );
+//   return capitalizedWords.join(" ");
+//   //   alert(str);
+// }
+// let word = prompt("enter sentance you want");
+// capitalizeWords(word);
+
+// function capitalizeWords(str) {
+//   let words = str.split("");
+//   for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+//   }
+//   return words.join(" ");
+// }
+
+// let word = prompt("enter sentance you want"); // "javascript is fun"
+// alert(capitalizeWords(word));
+
+// let arrr =["a", "b", "c", "d", "e"]
+// console.log(arrr[3]);
+
+// function findUpperWords(letter) {
+//   let count = 0;
+//   for (let i = 0; i < letter.length; i++) {
+//     if (letter[i].charCodeAt() > 64 && letter[i].charCodeAt() < 91) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// alert(findUpperWords("JavaScript Developer's Guide"));
