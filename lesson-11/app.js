@@ -137,67 +137,130 @@
 // };
 // console.log(users);
 
-
-
 //  factory function
 // callbacks function
 // IIFE function
 // anonimous function
-// HOF 
+// HOF
 // this keyword
 // ?.
 // in keyword
 // object methods
 
-
-// person objectini tuzing uning ichida name surname address  va uning ichida city va zipcode bolsin
+// person objectini tuzing uning ichida name surname address  va uning
+//  ichida city va zipcode bolsin
 //  objectga uning toliq ismini katta harflar bilan chiqarib beradigan method yarating
-// ?. dan foydalanib mavjud qiymatlarini tekshirib koring 
-
+// ?. dan foydalanib mavjud qiymatlarini tekshirib koring
 
 // homework
 // 1
-// Parametr sifatida nomi, modeli va yili qabul qiluvchi va shu 
+// Parametr sifatida nomi, modeli va yili qabul qiluvchi va shu
 // xususiyatlarga ega avtomobil obyektini qaytaradigan createCar nomli funksiyasini yarating.
 // Qaytarilgan avtomobil ob'ektida avtomobilni tavsiflovchi satrni qaytarish
 //  uchun this kalit so'zidan foydalanadigan getCarInfo() methodi ham bo'lishi kerak.
 
+// function createCar(marka, model, year) {
+//   return {
+//     marka,
+//     model,
+//     year,
+//     getCarInfo() {
+//       return `Avtomobil ${this.marka} ${this.model}, ${this.year} modelda .`;
+//     },
+//   };
+// }
+// let car1 = createCar("BMW", "M5", "2008");
+// let car2 = createCar("Mers Bens","test","2010")
+// console.log(car1.getCarInfo());
+// console.log(car2.getCarInfo());
 // 2
 // Ikki argumentni qabul qiluvchi processOrder funktsiyasini yozing:
 //  ordernumber va  callback function.
 // callback funktsiyasi order qayta ishlanganligi haqida xabarni ko'rsatishi kerak.
-// ProcessOrder funksiyangizni turli callbacklar bilan sinab ko‘ring (masalan, console.log va boshqa 
+// ProcessOrder funksiyangizni turli callbacklar bilan sinab ko‘ring (masalan, console.log va boshqa
 //callback   funksiyasi).
 
+// function processOrder(orderNumber, callback) {
+//   callback(orderNumber);
+// }
+// processOrder(111, (num) => {
+//   console.log(`Order ${num} qayta ishlangan`);
+// });
 // 3
 // Skript ishga tushirilgandan so'ng darhol konsolga joriy sana va vaqtni qayd qiluvchi function yozing.
-
+// (function () {
+//   let date = new Date();
+//   console.log(
+//     `Joriy sana: ${date.getDate()}.${
+//       date.getMonth() + 1
+//     }.${date.getFullYear()}`,
+//     `Vaqt: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+//   );
+// })();
+// console.log(2,3);
 // 4
 // function filterItems(arr, predicate) {
 //     // Your code here
 // }
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(filterItems(numbers, n => n > 3)); // Output: [4, 5]
-
+// function filterItems(arr, predicate) {
+//   return arr.filter(predicate);
+//   // Your code here
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(filterItems(numbers, (n) => n % 2 == 0));
 // 5
 // const person = {
 //     firstName: 'John',
 //     lastName: 'Doe',
+//     age: 30,
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     // Add properties here
 //     // Add method here
 // };
 // console.log(person.getFullName()); // "John Doe"
 
 // 6
 // const company = {
-//     name: 'TechCorp',
-//     location: 'San Francisco',
-//     // ceo: { name: 'Jane Doe' }  // Uncomment this line to test
+//   name: "TechCorp",
+//   location: "San Francisco",
+//   ceo: { name: "Jane Doe" }, // Uncomment this line to test
 // };
+// if (company?.ceo?.name?.test?.cargo) {
+//   console.log("CEO has a cargo");
+// } else {
+//   console.log("CEO does not have a cargo");
+// }
 // console.log(company.ceo?.name); // Use optional chaining
 
 // 7
 // const calculator = {
-    // Define methods here (add, subtract, etc.)
+// Define methods here (add, subtract, etc.)
 // };
 // console.log(calculator.add(5, 3)); // 8
 // console.log(calculator.subtract(10, 4)); // 6
+
+// let calc = {
+//   add: (a, b) => a + b,
+//   subtract: function (a, b) {
+//     return a - b;
+//   },
+//   multiply: function (a, b) {
+//     return a * b;
+//   },
+//   divide: function (a, b) {
+//     if (b === 0) {
+//       throw new Error("Division by zero is not allowed.");
+//     }
+//     return a / b;
+//   },
+// };
+
+// console.log(calc.add(5, 3)); // 8
+
+// console.log(calc.subtract(10, 4)); // 6
+
+// console.log(calc.multiply(2, 5)); // 10
