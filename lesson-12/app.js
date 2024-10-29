@@ -462,42 +462,41 @@
 // test(1, 24, 8, 5, 33, 2);
 
 // homework
-let data = [
+let datas = [
   {
-    id:1,
+    id: 1,
     name: "John Doe",
     age: 30,
     email: "john@example.com",
     phone: "123-456-7890",
   },
   {
-    id:2,
+    id: 2,
     name: "Jane Smith",
     age: 25,
     email: "jane@example.com",
     phone: "987-654-3210",
   },
   {
-    id:3,
+    id: 3,
     name: "Tom Hardy",
     age: 40,
     email: "tom@example.com",
     phone: "765-432-1098",
   },
   {
-    id:4,
+    id: 4,
     name: "Emily Blunt",
     age: 28,
     email: "emily@example.com",
     phone: "321-654-9870",
   },
   {
-    id:5,
-
-    name: "Emily Blunt",
-    age: 28,
-    email: "emily@example.com",
-    phone: "321-654-9870",
+    id: 5,
+    name: "Emily Test",
+    age: 48,
+    email: "emilytest@example.com",
+    phone: "321-654-98700980",
   },
 ];
 
@@ -510,23 +509,68 @@ let data = [
 
 // 4 ta function tuziladi
 
+// function create(data) {
+//   datas.push(data);
+//   console.log(datas);
+// }
+
+// let name = prompt("what is your name?");
+// let age = prompt("how old are you?");
+// let email = prompt("what is your email?");
+// let phone = prompt("what is your phone number?");
+// let date = new Date();
 // create({
+//   id: datas[datas.length - 1].id + 1,
+//   name,
+//   age,
+//   email,
+//   phone,
+// });
+// console.log(date.getTime());
+
+///////////////////////////////////
+// let search = prompt("enter your searching name");
+// function read(name) {
+//   let data = datas.filter((val, inx) =>
+//     val.name.toLowerCase().includes(name.toLowerCase())
+//   );
+//   console.log(data);
+// }
+// read(search);
+// => {
 //   name: "Emily Blunt",
 //   age: 28,
 //   email: "emily@example.com",
 //   phone: "321-654-9870",
-// });
+// }
 
+let id = prompt("Enter id");
+function update(ids, info,re) {
+  let index = datas.findIndex((user) => user.id === ids);
+  if (index!== -1) {
+    let res= {...datas[index],...info };
+    console.log(datas);
+  }
+}
 
-// read("Emily") 
-// => {
-  //   name: "Emily Blunt",
-  //   age: 28,
-  //   email: "emily@example.com",
-  //   phone: "321-654-9870",
-  // }
+update(3, {
+  age: 40,
+  phone: "765-432-10w98",
+},5);
 
+ 
 
-  // update(2,{})
+// let arr =[1,2,3,4]
+// arr[2]=99
+// console.log(arr);
 
-  delete(3)
+// function onDelete(ids) {
+//   let res = datas.filter((val) => val.id !== ids);
+//   console.log(res);
+// }
+// onDelete(3);
+
+// let arr=[1,2,3,4]
+// arr.filter((val,bir,arrs)=>)
+
+// CRUD  VIDEO SHAKLIDA TUSHUNTRIB KELINADI
