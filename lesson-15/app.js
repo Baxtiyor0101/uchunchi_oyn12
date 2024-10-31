@@ -4,6 +4,8 @@
 // Pure function
 // imPure function
 
+
+
 ///////////////// Ternaery Operator (? :) oxshash if else
 // let res = 12;
 // let test = res % 2 === 0 ? res * 2 : res / 2;
@@ -92,41 +94,41 @@
 // console.log(x);
 
 
-Employee Bonus Calculation:
-Write a program that calculates an employee's bonus based on their 
-years of service and performance rating:
+// Employee Bonus Calculation:
+// Write a program that calculates an employee's bonus based on their 
+// years of service and performance rating:
 
-Years of Service:
+// Years of Service:
 
-More than 10 years: Eligible for a bonus.
-Between 5 and 10 years: Eligible for half the bonus.
-Less than 5 years: No bonus.
+// More than 10 years: Eligible for a bonus.
+// Between 5 and 10 years: Eligible for half the bonus.
+// Less than 5 years: No bonus.
  
 
-Rating of "Excellent": Full bonus.
-Rating of "Good": 75% of the bonus.
-Rating of "Average": 50% of the bonus.
-Calculate and display the final bonus amount, with a ternary operator 
-handling each condition. Define a base bonus amount (e.g., $1000) that the
- conditions will modify.
+// Rating of "Excellent": Full bonus.
+// Rating of "Good": 75% of the bonus.
+// Rating of "Average": 50% of the bonus.
+// Calculate and display the final bonus amount, with a ternary operator 
+// handling each condition. Define a base bonus amount (e.g., $1000) that the
+//  conditions will modify.
 
 
 
 
-////////////////////////////////////////
-Bank Loan Interest Rate Calculation:
-Write a program to calculate the interest rate for a bank loan based on 
-the customer’s credit score and loan amount:
+// ////////////////////////////////////////
+// Bank Loan Interest Rate Calculation:
+// Write a program to calculate the interest rate for a bank loan based on 
+// the customer’s credit score and loan amount:
 
-Credit Score:
+// Credit Score:
 
-750 and above: Low-interest rate.
-Between 600 and 749: Medium-interest rate.
-Below 600: High-interest rate.
-Loan Amount (only applies if interest is low or medium):
+// 750 and above: Low-interest rate.
+// Between 600 and 749: Medium-interest rate.
+// Below 600: High-interest rate.
+// Loan Amount (only applies if interest is low or medium):
 
-For amounts over $10,000, reduce the rate by an additional 0.5%.
-For amounts under $5,000, add an additional 0.5%.
-Use a base interest rate (e.g., 5%) and modify it based on the 
-conditions using nested ternary operators. Display the final interest rate 
-based on the credit score and loan amount.
+// For amounts over $10,000, reduce the rate by an additional 0.5%.
+// For amounts under $5,000, add an additional 0.5%.
+// Use a base interest rate (e.g., 5%) and modify it based on the 
+// conditions using nested ternary operators. Display the final interest rate 
+// based on the credit score and loan amount.
