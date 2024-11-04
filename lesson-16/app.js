@@ -43,23 +43,23 @@
 // Json.Stringfy()
 // Json.Parse()
 
-let longUser = {
-  name: "John Doe",
-  age: 30,
-  email: "john@example.com",
-  address: {
-    street: "123 Main St",
-    city: "New York",
-  },
-  hobbies: ["reading", "painting", "cooking"],
-  friends: [
-    { name: "Jane Doe", age: 28 },
-    { name: "Alice Johnson", age: 32 },
-  ],
-  greetings: function () {
-    console.log("Hello, my name is " + this.name);
-  },
-};
+// let longUser = {
+//   name: "John Doe",
+//   age: 30,
+//   email: "john@example.com",
+//   address: {
+//     street: "123 Main St",
+//     city: "New York",
+//   },
+//   hobbies: ["reading", "painting", "cooking"],
+//   friends: [
+//     { name: "Jane Doe", age: 28 },
+//     { name: "Alice Johnson", age: 32 },
+//   ],
+//   greetings: function () {
+//     console.log("Hello, my name is " + this.name);
+//   },
+// };
 
 // shallow copy qilasla va tekshirib korila for in,object.assign
 // shallow  copy json.stringfy va json.parse bilan
@@ -116,32 +116,58 @@ let longUser = {
 // let copied = { ...user };
 
 // ///////////   deep copy with recursive function
-let user = {
-  name: "John Doe",
-  age: 30,
-  email: "john@example.com",
-  address: {
-    street: "123 Main St",
-    city: "New York",
-  },
-  sayHi() {
-    console.log("Hello, my name is " + this.name);
-  },
-};
+// let user = {
+//   name: "John Doe",
+//   age: 30,
+//   email: "john@example.com",
+//   address: {
+//     street: "123 Main St",
+//     city: "New York",
+//   },
+//   sayHi() {
+//     console.log("Hello, my name is " + this.name);
+//   },
+// };
+// let copied2 = JSON.parse(JSON.stringify(user));
+// console.log(copied2);
+// console.log(user);
 
-function deepCopy(obj) {
-  if (typeof obj !== "object" || obj === null) {
-    return obj;
-  }
-  let copiedObj = Array.isArray(obj) ? [] : {};
-  for (let key in obj) {
-    copiedObj[key] = deepCopy(obj[key]);
-  }
-  return copiedObj;
-}
-let copied = deepCopy(user);
-copied.address.street = "sdsdfsdfsd";
-// user.sayHi();
+// function deepCopy(obj) {
+//   if (typeof obj !== "object" || obj === null) {
+//     // console.log("buni copy qilib bolmaydi chunki bu object emas");
+//     return obj;
+//   }
+//   let copiedObj = Array.isArray(obj) ? [] : {};
+//   for (let key in obj) {
+//     copiedObj[key] = deepCopy(obj[key]);
+//   }
+//   return copiedObj;
+// }
+// let copied = deepCopy(user);
+// console.log([]);
+// copied.address.street = "sdsdfsdfsd";
+// // user.sayHi();
 
-// copied.sayHi(); // Hello, my name is John Doe
-console.log(user);
+// // copied.sayHi(); // Hello, my name is John Doe
+// console.log(user);
+
+// let longUser = {
+//   name: "John Doe",
+//   age: 30,
+//   email: "john@example.com",
+//   address: {
+//     street: "123 Main St",
+//     city: "New York",
+//   },
+//   hobbies: ["reading", "painting", "cooking"],
+//   friends: [
+//     { name: "Jane Doe", age: 28 },
+//     { name: "Alice Johnson", age: 32 },
+//   ],
+//   greetings: function () {
+//     console.log("Hello, my name is " + this.name);
+//   },
+// };
+// let res = Object.assign({},longUser);
+// res.address.city="Tashkent"
+// console.log(longUser);
